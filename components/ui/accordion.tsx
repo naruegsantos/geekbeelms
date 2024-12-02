@@ -54,13 +54,13 @@ const AccordionContent = React.forwardRef<
 ))
 AccordionContent.displayName = AccordionPrimitive.Content.displayName
 
-export default function Accordion_(){
+export default function AccordionUI({children, title}:{children?:React.ReactNode, title:string}){
   return(
     <Accordion type="single" collapsible>
       <AccordionItem value="item-1">
-        <AccordionTrigger>Is it accessible?</AccordionTrigger>
+        <AccordionTrigger>{title}</AccordionTrigger>
         <AccordionContent>
-          Yes. It adheres to the WAI-ARIA design pattern.
+          {children}
         </AccordionContent>
       </AccordionItem>
     </Accordion>
