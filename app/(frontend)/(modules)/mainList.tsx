@@ -14,7 +14,7 @@ interface IFullCycle extends ICycle{
 export default function CyclesList({data}:{data:IFullCycle[] | null}) {
 	return (
 		<>
-			<div className="w-1/5">
+			<div className="w-[50vw]">
 				<AccordionUI title="Cycles">
 					{data?.map((i)=> (
 						<div key={i.id} className="pl-4">
