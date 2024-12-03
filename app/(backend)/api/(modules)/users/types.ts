@@ -3,5 +3,5 @@ export interface IUser {
     name: string;
     level:number;
     password:string;
-    created_at?:any;
+    created_at?:string;
 }

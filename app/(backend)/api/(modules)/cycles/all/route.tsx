@@ -1,7 +1,7 @@
 import { NextResponse } from 'next/server'
-import { SELECT } from './services'
+import { SELECTALL } from '../services'
 
 export async function GET() {
-	const data = await SELECT()
+	const data = await SELECTALL()
 	return NextResponse.json(data)
 }

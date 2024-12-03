@@ -5,5 +5,5 @@ export interface IStep {
     step_user:number
     status:number;
     desc:string;
-    created_at?:any;
+    created_at?:string;
 }
